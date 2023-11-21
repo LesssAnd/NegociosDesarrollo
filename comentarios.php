@@ -45,14 +45,12 @@ if ($resultadoProducto->num_rows > 0) {
     // Mostrar detalles del producto
 ?>
     <h2 class="product-name"><?php echo $nombre_producto; ?></h2>
-    <img class="product-image" src="imgs/<?php echo $id_producto; ?>.jpg" alt="Producto <?php echo $id_producto; ?>">
+    <img class="product-image" src="imgs/<?php echo $id_producto; ?>.png" alt="Producto <?php echo $id_producto; ?>">
 <?php
 } else {
     echo 'Producto no encontrado.';
 }
 ?>
-
-<button id="btn-agregar-comentario" onclick="mostrarFormulario()">Agregar Comentario</button>
 
 <div id="formulario-comentario" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); z-index: 9999;">
     <button onclick="ocultarFormulario()" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Cerrar</button>
@@ -69,7 +67,8 @@ if ($resultadoProducto->num_rows > 0) {
             <option value="5">Locion Cetaphil</option>
             <option value="6">Opcion 6</option>
         </select>
-
+        
+          <br>
         <label for="comentario">Comentario:</label>
         <textarea name="comentario" rows="4" required></textarea>
 

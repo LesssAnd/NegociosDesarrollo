@@ -1,0 +1,71 @@
+
+
+/*Estilo para la imagen y nombre de producto en comenrarios.php*/
+.product-name {
+    text-align: center;
+    font-size: 24px;
+}
+
+.product-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Estilos para el formulario emergente */
+#formulario-comentario {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+}
+
+#formulario-comentario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario-comentario input,
+#formulario-comentario select,
+#formulario-comentario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#formulario-comentario input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formulario-comentario input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#formulario-comentario button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #333;
+}
+
+#formulario-comentario button:hover {
+    color: #555;
+}
+

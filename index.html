@@ -73,6 +73,7 @@
               <p class="productos-titulo">Bloqueador solar Nivea</p>
             <p>NIVEA te protege inmediatamente después de aplicarse. Rápida Absorción y Consistencia Menos Grasosa: La nueva fórmula de NIVEA SUN tiene una consistencia más ligera, sin la sensación de una crema grasosa.</p>
             </div>
+            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=1'">Ver Comentarios</button>
           </div>
           
           <!-- Producto 2 -->
@@ -85,6 +86,7 @@
               
       
             </div>
+            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=2'">Ver Comentarios</button>
           </div>
           <!-- Producto 3 -->
           <div class="col-12 col-md-6 col-lg-4">
@@ -95,6 +97,7 @@
             Elimina el 99.9% de bacterias sin resecar la piel. La fórmula nutritiva de Dove limpia tu piel, dejándola protegida y visiblemente saludable.
               
             </div>
+            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=3'">Ver Comentarios</button>
           </div>
           <!-- Producto 4 -->
           <div class="col-12 col-md-6 col-lg-4">
@@ -105,6 +108,7 @@
             No es grasosa y es de rápida absorción, Apta para piel seca a muy seca, piel irritada, con comezón, psoriasis o dermatitis atópica. Está avalada por la Asociación Mexicana de Diabetes.
       
             </div>
+            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=4'">Ver Comentarios</button>
           </div>
           <!-- Producto 5 -->
           <div class="col-12 col-md-6 col-lg-4">
@@ -115,6 +119,7 @@
              Hidratación inmediata e intensa a partir de las 2 horas y hasta por 24 horas.Combinación única de 5 ingredientes clave que ayudan a restaurar el balance natural de la piel.
       
             </div>
+            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=5'">Ver Comentarios</button>
           </div>
           <!-- Producto 6 -->
           <div class="col-12 col-md-6 col-lg-4">
@@ -126,7 +131,7 @@
               
       
             </div>
-            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=1'">Ver Comentarios</button>
+            <button class="btn" type="submit" id="lanzar-pagina" onclick="window.location.href='comentarios.php?id=6'">Ver Comentarios</button>
 
           </div>
         </div>
@@ -144,8 +149,6 @@
 
 
 
-
-
     <!--Formulario-->
     
     <div class="contenedor">
@@ -157,10 +160,26 @@
            
             <h2>¡Gracias por tu comentario!</h2>
 
-            <form action="">
-                <input type="text" placeholder="Introduce un nombre" id="nombre">
-                <input type="text" placeholder="Comentaro" id="comentario">
-                <button class="btn" type="submit" id="ocultar-modal">ENVIAR</button>
+            <form action="procesar_comentario.php" method="post">
+
+                <input type="text" placeholder="Introduce un nombre" id="nombre" name="nombre">
+                <label for="opciones">Selecciona una opción:</label>
+                <select name="opciones" required>
+                    <option value="1">Bloqueador solar Nivea</option>
+                    <option value="2">Crema corporal St Ives</option>
+                    <option value="3">Jabon Dove</option>
+                    <option value="4">Crema CeraVe</option>
+                    <option value="5">Locion Cetaphil</option>
+                    <option value="6">Opcion 6</option>
+                </select>
+                <label>
+                    <input type="radio" name="sexo" value="Masculino"> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="Femenino"> Femenino
+                </label>
+                <input type="text" placeholder="Comentario" id="comentario" name="comentario">
+                <input type="submit" value="Enviar Comentario">
             </form>
         </div>
     </div>

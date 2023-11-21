@@ -195,3 +195,62 @@ footer {
   color: #ffffd9;
   padding: 20px;
 }
+
+
+/* Esto se redirige a comentarios.php*/ 
+/* Estilos para el carrusel de comentarios */
+.carousel-coments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carousel-item-coments {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.carousel-item-coments .comment-date {
+    text-align: right;
+    font-style: italic;
+    color: #a0a0a0;
+    margin-right: 15px;
+}
+
+.user-content {
+    font-weight: bold;
+    color: #333;
+
+}
+
+.comment-content {
+    margin-top: 5px;
+    color: #555;
+}
+
+.no-comments-message {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
+
+/*Estilo para la imagen y nombre de producto en comenrarios.php*/
+.product-name {
+    text-align: center;
+    font-size: 24px;
+}
+
+.product-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+}
+
